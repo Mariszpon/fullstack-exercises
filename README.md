@@ -21,8 +21,8 @@
 ## ♯ Introdução: <a id="introducao"></a>
 
 Este repositório marca o início da minha trajetória em programação desde Agosto de 2026. <br>
-Ele reúne exercícios acadêmicos em **HTML, CSS e JavaScript** desenvolvidos como parte da disciplina de programação WEB. <br>
-Os arquivos estão organizados por exercícios da disciplina, cada uma abordando um tema diferente de desenvolvimento front-end.
+Ele reúne exercícios acadêmicos em **HTML, CSS, JavaScript, PHP e JSON** desenvolvidos como parte da disciplina de programação WEB. <br>
+Os arquivos estão organizados por exercícios da disciplina, cada uma abordando um tema diferente de desenvolvimento **front-end e back-end**.
 
 ### ⟢ Conceitos Aplicados:
 #### HTML
@@ -72,7 +72,7 @@ Os arquivos estão organizados por exercícios da disciplina, cada uma abordando
 
 ## ♯ Objetivo: <a id="objetivo"></a>
 
-Este repositório tem como objetivo guardar minhas práticas de conceitos fundamentais de programação em **HTML, CSS e JavaScript**, documentando meu progresso acadêmico ao longo da graduação.
+Este repositório tem como objetivo guardar minhas práticas de conceitos fundamentais de programação em **HTML, CSS, JavaScript, PHP e JSON**, documentando meu progresso acadêmico ao longo da graduação.
 
 ## ♯ Notas Pessoais: <a id="notaspessoais"></a>
 
@@ -82,9 +82,11 @@ Em desenvolvimento. 🚧
 
 ### ⟢ Tecnologias Utilizadas:
 [![Html](https://img.shields.io/badge/Html-3776AB?logo=html5&logoColor=fff)](#)&nbsp;
-[![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=visualstudiocode&logoColor=fff)](#)
 [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#)&nbsp;
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
+[![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=fff)](#)&nbsp;
+[![JSON](https://img.shields.io/badge/JSON-000000?logo=json&logoColor=fff)](#)&nbsp;
+[![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=visualstudiocode&logoColor=fff)](#)
 [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](#)
 
