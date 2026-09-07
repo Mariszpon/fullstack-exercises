@@ -1,0 +1,301 @@
+/* Site das fontes: https://fonts.google.com/ 
+Site da sombra: https://getcssscan.com/css-box-shadow-examples
+
+Margin: Espaço externo (Entre elementos e outros ao redor)
+Padding: Espaço interno (Distância do conteúdo e borda)
+
+{} engloba tudo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura mínima da tela */
+}
+
+/* Padding e margin pra não ficar margem no site/
+
+/Um do lado do outro + Centralizar*/
+.main {
+    flex: 1; /* ocupa o espaço disponível */
+    display: flex; /*transforma o elemento em um container flexível*/
+    justify-content: center; /*centraliza os elementos horizontalmente */
+}
+
+.main2{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px; /*largura*/
+    height: 600px; /*altura*/
+    margin: 50px;
+    background-color: #f0f0f0;
+    color: #5e5780;
+    /*Borda arredondada*/
+    border-radius: 10px;
+    /*Sombra*/
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-family: "Elsie", serif;
+    text-align: center;
+}
+
+.card>h1 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* Margin tem 2 px porque o primeiro é o de cima e o segundo é o dos lados.*/
+.card>p {
+    font-size: 16px;
+    margin: 10px 10px;
+    font-family: "Quintessential", serif;
+}
+
+.card>img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn {
+    background-color: #5e5780;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: #4b3f6b;
+    transition: background-color 0.5s;
+
+}
+
+.tags{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tags>span {
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: #9189bd;
+    color: #ffffff;
+}
+
+.contato {
+    position:relative;
+    bottom:0;
+    margin-top:50px;
+    width: 100%;
+    height: 100px;
+    background-color: #5e5780;
+    color: #ffff;
+    /*Sombra*/
+    box-shadow: rgba(20, 15, 34, 0.56) 0px 22px 70px 4px;
+    text-align: center;
+    display:flex;
+}
+
+.contato h1{
+    font-family: "Quintessential", serif;
+    padding-top: 20px;
+    font-family: "Gelasio", serif;
+    font-size: 15px;
+    margin-left: 20px;
+    flex-direction: column;
+    display:flex; /* empilha os textos dentro da coluna */
+    align-items: flex-start; /* alinha à esquerda */
+}
+
+.contato a {
+    text-decoration: none;
+    color:#f0f0f0;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left:300px;
+    font-family: "Tangerine", cursive;
+    color:#ffffff;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgba(20, 15, 34, 0.56);
+    display: flex;
+    align-items: center;       /* centraliza verticalmente */
+    justify-content: center;   /* centraliza horizontalmente */
+    
+}
+.logo p{
+    font-size:20px;
+}
+
+.linha {
+    border-left: 2px solid #ffffff; /* cria a linha vertical */
+    height: 80px;                   /* altura da linha */
+    margin-left: 900px;             /* espaço pra direita */
+    margin-top:10px
+}
+
+.cima{
+    width: 100%;
+    height: 20px;
+    background-color: #ffff;
+    color: #aea7d4;
+}
+
+.cima h1{
+    padding-left: 3px;
+    font-size: 14px;    /* ajusta tamanho da fonte */
+}
+
+.titulo {
+    width: 100%;
+    height: 100px;
+    background-color: #5e5780;
+    color: #ffff;
+    /*Sombra*/
+    box-shadow: rgba(35, 26, 59, 0.171) 0px 22px 70px 4px;
+    justify-content: center;
+    display:flex;
+    padding-top:20px;
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgba(20, 15, 34, 0.56);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px; /* separação automática entre os links */
+}
+
+.menu a {
+    background-color: #5e5780;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: "Gelasio", serif;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #4b3f6b;
+}
+
+/* LOGIN.HTML & CADASTRO.HTML*/
+
+.card-login{
+    display: flex;
+    flex-direction: row;        /* lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;       /* topo */
+    margin: 50px auto; /* centraliza o card na tela */
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width:1200px;
+    height:550px;
+    background-color: #f0f0f0;
+}
+
+.login {
+    flex: 2;
+}
+
+.login h1{
+    font-family: "Tangerine", cursive;
+    text-shadow: 1px 1px 3px rgba(20, 15, 34, 0.233);
+    font-size: 60px;
+    color: #5e5780;
+    margin-left: 100px;
+    margin-top: 85px;
+}
+
+.login p{
+    font-family: "Gelasio", serif;
+    font-size:15px;
+    color: #aea7d4;
+    margin-top: 10px;
+    margin-left: 185px;
+}
+
+.login img{
+    margin-top: 50px;
+    margin-left: 160px;
+    width: 200px;
+    height: 200px;
+}
+
+.loginc {
+    
+    font-family: "Gelasio", serif;
+    width: 300px; /*largura*/
+    height: 450px; /*altura*/
+    margin: 50px;
+    background-color: #5e5780;
+    color: #ffff;
+
+    flex: 1; /* ocupa menos espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.loginc h1{
+    margin-left: 20px;
+}
+
+.loginc p{
+    margin-left: 20px;
+}
+
+.termos {
+    margin-bottom:20px;
+    font-size: 12px;
+}
+
+.loginc input {
+    width: 80%;           /* ocupa boa parte da largura */
+    padding: 10px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.btne {
+    width:295px;
+    margin:20px;
+    background-color: #aea7d4;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btne:hover {
+    background-color: #8780b1;
+    transition: background-color 0.5s;
+
+}
+
+.linkc {
+    color:#aea7d4;
+    text-decoration: none;
+    
+}
