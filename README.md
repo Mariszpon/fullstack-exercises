@@ -33,7 +33,7 @@ Os arquivos estão organizados por exercícios da disciplina, cada uma abordando
 - Integração de fontes externas via <b>[Google Fonts](https://fonts.google.com/)</b>
 - Inputs (`<input`>) e textarea (`<textarea>`) para entrada de dados do usuário
 - Estrutura de formulários (`<form>`) com campos de login e cadastro
-- Uso de ícones externos com <b>Font Awesome</b>
+- Uso de ícones externos com <b>[Font Awesome](https://fontawesome.com/icons)</b>
 
 #### CSS
 - Flexbox para centralização de layout (`display: flex`, `justify-content`, `align-items`)
