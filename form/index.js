@@ -84,7 +84,7 @@ Se acontecer algum problema (servidor fora do ar, erro de rede, JSON inválido),
 O catch serve para tratar erros e evitar que o programa quebre.
 Nesse caso, ele mostra no console:
 “Erro: error”
-error serve pra mostrar o motivo do problema
+error serve pra mostrar detalhes do que deu errado, como mensagem de erro, stack trace, etc.
 */
 .then(response => response.json())
 .then(data => {
