@@ -61,11 +61,12 @@ Os arquivos estão organizados por exercícios da disciplina, cada uma abordando
 - Conversão de valores com `parseFloat`
 - Validação com `isNaN` para verificar se o valor é numérico
 - Estruturas condicionais (`if`, `else if`, `else`) para lógica de comparação
-- Funções para operações matemáticas básicas (+, -, *, /)
+- Funções para operações matemáticas básicas (`+`, `-`, `*`, `/`)
 - Uso de `eval()` para interpretar expressões matemáticas digitadas
 - Tratamento de erros com `try...catch`
 - Funções de reset/limpeza para restaurar estado inicial
 - Console para debug (`console.log`)
+- Alternância entre login/cadastro com `classList.add/remove`
 
 ## ♯ Objetivo: <a id="objetivo"></a>
 
