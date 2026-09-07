@@ -1,11 +1,13 @@
 <div align="center">
-<h1> ⤷ Exercícios em Html, CSS e JavaScript 🌐 </h1>
+<h1> ⤷ Exercícios Fullstack 🌐 </h1>
 <p>
   <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow" />
   <img src="https://img.shields.io/badge/projeto-acadêmico-purple" />
   <img src="https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=fff" />
   <img src="https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=fff" />
+  <img src="https://img.shields.io/badge/JSON-000000?logo=json&logoColor=fff" />
 </p>
 
 <p>
