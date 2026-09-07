@@ -43,7 +43,7 @@ Os arquivos estão organizados por exercícios da disciplina, cada uma abordando
 - Estilização de texto: `font-family`, `font-size`, `color`, `text-align`, `text-shadow`
 - Estilização de botões: `background-color`, `border-radius`, `cursor`, `transition`, `:hover`
 - Estilização de imagens: `object-fit`, `border-radius`
-- Sombras: `box-shadow` via [CSS Box Shadow Examples](https://getcssscan.com/css-box-shadow-examples)
+- Sombras: `box-shadow` via [CSS Scan](https://getcssscan.com/css-box-shadow-examples)
 - Botões com hover e transições (`transition`, `:hover`)
 - `background-image` responsivo com `cover` e `vh` para ocupar toda a tela
 - `overflow: hidden` para controlar conteúdo em containers arredondados
