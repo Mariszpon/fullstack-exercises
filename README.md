@@ -30,7 +30,7 @@ Os arquivos estão organizados por exercícios da disciplina, cada uma abordando
 - Imagens com atributos (`<img src="..." alt="...">`)
 - Uso de botões com `onclick` para navegação entre páginas e execução de funções
 - Organização de conteúdo em containers (`<div class="container">`)
-- Integração de fontes externas via <b>Google Fonts</b>
+- Integração de fontes externas via <b>[Google Fonts](fonts.google.com)</b>
 - Inputs (`<input`>) e textarea (`<textarea>`) para entrada de dados do usuário
 - Estrutura de formulários (`<form>`) com campos de login e cadastro
 - Uso de ícones externos com <b>Font Awesome</b>
