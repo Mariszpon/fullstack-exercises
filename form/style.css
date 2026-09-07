@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* @import → é uma regra do CSS usada pra importar recursos externos, como fontes ou outros arquivos CSS. */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* O navegador passa a calcular o tamanho incluindo conteúdo + padding + border dentro da largura/altura definida. */
+}
+
+.container{
+    position: relative;
+    width:100%;
+    background: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+    /*position: relative; = Isso significa que elementos filhos com position: absolute vão se posicionar em relação a ele. */
+    /*min-height: 100vh; = garante que o container tenha pelo menos a altura da tela inteira, mesmo se o conteúdo for pequeno.*/
+    /*vh = viewport height (altura da janela do navegador).*/
+    /*overflow: hidden; = Esconde qualquer conteúdo que ultrapasse os limites do container.*/
+}
+
+.form-container{
+    position:  absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.login-cadastro{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    transition: 1s 0.7s ease-in-out; /*Duração, atraso antes de começar, tipo de animação (acelera e dps desacelera)*/
+    display: grid;
+    grid-template-columns: 1fr; /*1fr significa “uma coluna que ocupa todo o espaço disponível”.*/
+    z-index: 5; /*Define a ordem de empilhamento, qnt maior mais pra cima*/
+    /*transform: translate(-50%, -50%); = centraliza*/
+    /* move a caixa metade da sua própria largura e altura pra trás, fazendo o centro da caixa ficar exatamente nesse ponto.*/
+    /* com translate (Que move X e Y): o centro fica no meio, sem ficaria o canto no meio (Só com top e left)*/
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 5rem; /*0rem = Em cima e embaixo, 5rem = nas laterais*/ /*rem = root em, Ele é relativo ao tamanho da fonte do elemento raiz da página (normalmente o <html>).*/
+    transition: all 0.2s 0.7s; /*all = “Anime todas as propriedades que mudarem e que sejam animáveis.”*/
+    overflow: hidden;
+    grid-column: 1/2; /*ocupa só a primeira coluna.*/
+    grid-row: 1/2; /*ocupa só a primeira linha.*/
+}
+
+form.sign-in-form{
+    z-index: 2;
+}
+
+form.sign-up-form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.title{
+    font-size: 2.2rem;
+    color: #6b3b2b;
+    margin-bottom: 10px;
+}
+
+.input-field{
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 55px;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    position: relative;
+    padding: 0 0.4rem;
+}
+
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+.input-field input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.input-field input::placeholder{
+    color: #aaa;
+    font-weight: 500;
+}
+
+.social-text{
+    padding: 0.7rem 0;
+    font-size: 1rem;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.45rem;
+    color: #6b3b2b;
+    border-radius: 50%;
+    border: 1px solid #6b3b2b;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.social-icon:hover{
+    color: #411e13;
+    border-color: #411e13;
+}
+
+.btn{
+    width: 150px;
+    background-color: #e8a0a2;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600; /*espessura*/
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #b87d7f;
+}
+
+.panels-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(-45deg, #84abcc 0%, #8cb4d6 100%);
+    transition: 1.8s ease-in-out;
+    z-index: 6;
+    border-radius: 50%;
+}
+
+.image{
+    width: 100%;
+    transition: transform 1.1s ease-in-out;
+    transition-delay: 0.4s;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 6;
+}
+
+.left-panel{
+    pointer-events: all; /*all significa que todos os eventos de ponteiro são permitidos nesse elemento.*/
+    padding: 3rem 17% 2rem 12%; /*top, right, bottom, left*/
+}
+
+.right-panel{
+    pointer-events: none;
+    padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content{
+    color: #fff;
+    transition:transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+}
+
+.panel h3{
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+
+.panel p{
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+}
+
+.btn.transparent{
+    margin: 0;
+    background: none;
+    border: 2px solid #fff;
+    width: 130px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.right-panel .image, 
+.right-panel .content{
+    transform: translateX(800px); /*centraliza horizontal*/
+}
+
+
+
+/*- - - ANIMAÇÃO - - - */
+
+.container.sign-up-mode::before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content{
+    transform: translateX(-800px);
+}
+
+
+.container.sign-up-mode .login-cadastro{
+    left: 25%;
+}
+
+.container.sign-up-mode form.sign-up-form{
+    z-index: 2;
+    opacity: 1;
+}
+
+.container.sign-up-mode form.sign-in-form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content{
+    transform: translateX(0%);
+}
+
+.container.sign-up-mode .left-panel{
+    pointer-events: none;
+}
+
+.container.sign-up-mode .right-panel{
+    pointer-events: all;
+}
