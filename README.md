@@ -70,6 +70,15 @@ Os arquivos estão organizados por exercícios da disciplina, cada uma abordando
 - Console para debug (`console.log`)
 - Alternância entre login/cadastro com `classList.add/remove`
 
+#### PHP
+* Integração com `fetch` do JavaScript → recebendo dados via `php://input`.
+* Uso de `json_decode` e `json_encode` → conversão entre JSON e arrays associativos.
+* Persistência em arquivo (`usuarios.json`) → simulando um banco de dados simples.
+* Validação de duplicidade → checando se o usuário já existe.
+* Criptografia de senha → com `password_hash` e verificação com `password_verify`.
+* Tratamento de erros e mensagens claras → retornando status e mensagens para o frontend.
+* Boas práticas de `charset` → `charset=UTF-8` para evitar problemas com acentos.
+
 ## ♯ Objetivo: <a id="objetivo"></a>
 
 Este repositório tem como objetivo guardar minhas práticas de conceitos fundamentais de programação em **HTML, CSS, JavaScript, PHP e JSON**, documentando meu progresso acadêmico ao longo da graduação.
