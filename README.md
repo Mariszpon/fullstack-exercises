@@ -36,14 +36,20 @@ Os arquivos estão organizados por exercícios da disciplina, cada uma abordando
 - Uso de ícones externos com <b>[Font Awesome](https://fontawesome.com/icons)</b>
 
 #### CSS
-- Flexbox para centralização de layout (`display: flex`, `justify-content`, `align-items`)
-- Grid para organização dos cards (`display: grid`, `grid-template-columns`)
-- Estilização de tabelas com `border-collapse`, `nth-child(even/odd)` para linhas alternadas
+- **Box model**: `margin`, `padding`, `border`, `box-sizing`
+- **Flexbox**: `display: flex`, `justify-content`, `align-items`, `flex-direction`
+- **Grid**: `display: grid`, `grid-template-columns`
+- Estilização de tabelas com `border-collapse` e `nth-child(even/odd)` para linhas alternadas
+- Estilização de texto: `font-family`, `font-size`, `color`, `text-align`, `text-shadow`
+- Estilização de botões: `background-color`, `border-radius`, `cursor`, `transition`, `:hover`
+- Estilização de imagens: `object-fit`, `border-radius`
+- Sombras: `box-shadow` (referência: [CSS Box Shadow Examples](https://getcssscan.com/css-box-shadow-examples))
 - Botões com hover e transições (`transition`, `:hover`)
-- Uso de `box-shadow` e `border-radius` para profundidade e suavidade
 - `background-image` responsivo com `cover` e `vh` para ocupar toda a tela
 - `overflow: hidden` para controlar conteúdo em containers arredondados
 - Estilização de inputs, placeholders e mensagens de feedback
+- Responsividade com **media queries** (`@media`)
+- Animações de transição entre login e cadastro com classes (`.sign-up-mode`)
 
 #### JavaScript
 - Declaração de variáveis com `let` e `const`
