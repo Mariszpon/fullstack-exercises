@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantCare</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌱 PlantCare</h1>
+        <p class="subtitulo">Controle de Cuidados de Plantas</p>
+
+        <section class="formulario">
+
+            <h2>Cadastre sua Planta!</h2>
+
+            <input type="hidden" id="idPlanta">
+
+            <!--INPUTS-->
+            <input type="text" id="nome" placeholder="Nome da planta">
+
+            <input type="text" id="especie" placeholder="Espécie">
+
+            <!--SELECT-->
+            <select id="ambiente">
+                <option value="">Selecione o ambiente</option>
+                <option value="Interno">Interno</option>
+                <option value="Externo">Externo</option>
+            </select>
+
+            <input type="text"
+                   id="rega"
+                   placeholder="Frequência de rega">
+
+            <!--BOTÃO-->
+            <button id="btnCadastrar">
+                Cadastrar
+            </button>
+
+        </section>
+
+        <section class="tabela">
+
+            <h2>Plantas Cadastradas</h2>
+
+            <!--TABELA-->
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Espécie</th>
+                        <th>Ambiente</th>
+                        <th>Rega</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaPlantas">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
